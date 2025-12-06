@@ -1,0 +1,10 @@
+# Python dependencies for Neutron Star RDT code
+# Paper: "Recursive Dimensionality Theory III: Neutron Star Structure and the Heavy Pulsar Problem"
+# Author: Christopher K. Merrill (2025)
+
+# Core numerical libraries
+numpy>=1.19.0
+scipy>=1.5.0
+
+# Plotting (optional, only needed for figure generation)
+matplotlib>=3.3.0
