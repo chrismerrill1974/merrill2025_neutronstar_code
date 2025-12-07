@@ -1,10 +1,23 @@
-# Python dependencies for Neutron Star RDT code
-# Paper: "Recursive Dimensionality Theory III: Neutron Star Structure and the Heavy Pulsar Problem"
-# Author: Christopher K. Merrill (2025)
+# Paper III - Neutron Star Code Requirements
+# Version: 1.0 (Final - Corrected)
+# Date: December 7, 2025
 
-# Core numerical libraries
-numpy>=1.19.0
-scipy>=1.5.0
+# Core scientific computing
+numpy>=1.20.0
+scipy>=1.7.0
 
-# Plotting (optional, only needed for figure generation)
+# Plotting (for scripts/generate_plots.py)
 matplotlib>=3.3.0
+
+# Optional: Table generation
+pandas>=1.2.0
+
+# Optional: Better interpolation (if needed)
+# scikit-learn>=0.24.0
+
+# Development/Testing (optional)
+# pytest>=6.0.0
+# jupyter>=1.0.0
+
+# Recommended Python version: 3.8+
+# Tested on: Python 3.9, 3.10, 3.11, 3.12
