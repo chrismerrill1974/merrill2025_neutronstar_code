@@ -317,7 +317,7 @@ If you use this code, please cite:
 
 ```bibtex
 @article{Paper3,
-  author = {[Your Name] and Claude (Anthropic) and ChatGPT (OpenAI)},
+  author = {Christopher K Merrill and Claude (Anthropic) and ChatGPT (OpenAI)},
   title = {Testing Recursive Dimensionality Theory at Nuclear Densities: 
            Neutron Star Structure and Observable Signatures},
   year = {2025},
