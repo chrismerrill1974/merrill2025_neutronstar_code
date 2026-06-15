@@ -37,7 +37,7 @@ Python ≥ 3.10 with `numpy`, `scipy`, `matplotlib`.
 | `figures_v8.py` | Regenerates the paper figure (`figures/fig_mr_v8.pdf`): M–R with the RDT curve *inside* GR (contraction), and the fixed-mass contraction envelope. |
 | `data/` | EOS tables: CompOSE RG(SLY4) (`eos.thermo`, `eos.nb`, `eos.mr` reference curve; compose.obspm.fr), D&H 2001 (`eos_sly4_dh2001_v2.dat`), APR (`eos_apr_pc2017.dat`, kept for future multi-EOS work). |
 | `derivation.md`, `SIGN_VERDICT.md` | The operator-form derivation (the two embeddings, gates) and the committed sign verdict (audit branch 1a: contraction; numbers, robustness, embedding non-uniqueness). |
-| `solar_model.py`, `paper6_alpha1_bound.py` | **Paper VI support** (unchanged): reruns the Paper I solar analysis at the completion's predicted exponent α=1 → A₉₅(α=1) = 0.0120, ε_sat < 0.036, d_eff > 2.964. `solar_model.py` is a verbatim copy of the Paper I V3 model module. ~30 s. |
+| `solar_model.py`, `companion_alpha1_bound.py` | **Companion-paper support** (number unchanged): reruns the Paper I solar analysis at the scalar-tensor companion's α=1 *extension point* (outside the canonical α∈[0.02,0.5], A<0.0087) → A₉₅(α=1) = 0.0120, ε_sat < 0.036, d_eff > 2.964. `solar_model.py` is a verbatim copy of the Paper I V3 model module. ~30 s. |
 | `archive_v7/` | Superseded V7 force-rescaling scripts (`predict.py`, `figures.py`, `results_predictions.csv`) — the F-multiplier that carried the wrong sign (+0.9% expansion). Retained for the record. |
 | `archive_v6/` | Superseded V6 code/results (the energy-density reconstruction bug documented in V7). |
 
@@ -51,12 +51,12 @@ python3 validate.py            # GR-baseline gates — run first
 python3 gate_independence.py   # operator-form gates: modified path -> GR linearly in A
 python3 boundary_sweep.py      # contraction ceiling along A95(alpha)  (~1 min)
 python3 figures_v8.py          # paper figure -> figures/fig_mr_v8.pdf
-python3 paper6_alpha1_bound.py # Paper VI: solar bound at the predicted exponent (~30 s)
+python3 companion_alpha1_bound.py # companion paper: alpha=1 extension-point solar bound (~30 s)
 ```
 
-This repository serves Papers III and VI of the series: the operator-form
-TOV pipeline for Paper III (V8), and the α = 1 solar-bound computation quoted
-in Paper VI (which reuses the Paper I machinery via `solar_model.py`).
+This repository serves Paper III (V8) and the scalar-tensor companion paper: the operator-form
+TOV pipeline for Paper III (V8), and the α = 1 extension-point solar-bound computation quoted
+in the companion paper (which reuses the Paper I machinery via `solar_model.py`).
 
 ## Note on the sign reversal
 

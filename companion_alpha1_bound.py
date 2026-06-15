@@ -1,16 +1,22 @@
 """
-Paper VI support: the solar bound at the completion's predicted exponent.
+Companion-paper support: the solar bound at the scalar-tensor companion's
+alpha = 1 extension point.
 
-The minimal chameleon completion of Paper VI predicts the series saturating
-opening law with density exponent alpha = 1 (phi_eq ~ beta0*rho/(m^2*Mpl)
-=> eps ~ rho/(rho + rho_*)), outside the range alpha in [0.02, 0.5] scanned
-in Paper I. This script reruns the Paper I V3 analysis (exact modified
+The minimal chameleon companion model (a scalar-tensor companion to the RDT
+series I-V, NOT part of the load-bearing chain; it reproduces the density law
+rather than deriving the canonical divergence-operator mechanism) reproduces
+the series saturating opening law with density exponent alpha = 1
+(phi_eq ~ beta0*rho/(m^2*Mpl) => eps ~ rho/(rho + rho_*)). This alpha = 1 is an
+EXTENSION POINT outside the canonical range alpha in [0.02, 0.5] scanned in
+Paper I (which bounds A < 0.0087). This script reruns the Paper I V3 analysis
+(exact modified
 Lane-Emden solar models, Borexino flux ratios with B16-GS98 theory errors
 in quadrature, helioseismic proxy penalty) at alpha = 1 and reports the
 95% CL upper limit on the amplitude A.
 
-Published result: A_95(alpha=1) = 0.0120  =>  eps_sat = 3A < 0.036,
-d_eff > 2.964 at saturation.
+Result (the alpha = 1 variant bound, reported separately from the canonical
+A < 0.0087): A_95(alpha=1) = 0.0120  =>  eps_sat = 3A < 0.036,
+d_eff > 2.964 at saturation (distinct from the canonical floor 2.974).
 
 Uses solar_model.py (the Paper I V3 model module, copied verbatim from the
 solarcore_code repository). Runs in ~30 s single-threaded.
