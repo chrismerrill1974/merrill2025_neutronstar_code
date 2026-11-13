@@ -1,0 +1,15 @@
+{
+  "version": "v9",
+  "works": [
+    "paper3"
+  ],
+  "scientific_input_commit": "f4cff7fbcbd795e876c2e0232dbde5a73637a9d7",
+  "capsule_sha256": "6afc176b92a1bf4c20460277e39a8525a844c0d8a79861daa376433f8e1c49f9",
+  "manuscripts": {
+    "paper3": "reproduction/paper3_NeutronStars/V8_Paper/paper3_v8.tex"
+  },
+  "pdfs": {
+    "paper3": "reproduction/output/pdf/publication/paper3/merrill_RDT_3_Neutrons_and_Pulsars_v9.pdf"
+  },
+  "repository": "https://github.com/chrismerrill1974/merrill2025_neutronstar_code"
+}
